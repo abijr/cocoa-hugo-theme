@@ -69,11 +69,17 @@ pre code {
     font-size: 1rem;
 }
 
-a code {
+a {
+  &[rel="footnote"] {
+    vertical-align: super;
+    font-size: smaller;
+  }
+  code {
     color: @accent !important;
     &:hover {
         text-decoration: underline;
     }
+  }
 }
 
 // 
